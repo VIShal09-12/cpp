@@ -25,34 +25,34 @@
 
 // Inputing the 'names'(String) in an array..
 
-import java.util.*;
-
-public class Array {
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        String names[]= new String[size];
-        
-        for(int i=0; i<size; i++){
-            names[i]= sc.next();
-        }
-        for(int i = 0; i<size; i++){
-            System.out.println(names[i]);
-        }
-        sc.close();
-    }
-}
+// import java.util.*;
 
 // public class Array {
-//     // In this function a new array 'input' is being created therefore our pointer point it to it and the value change will also be done in the new 'input' array created not the one that is passed
-//     public static void change(int input[]){ 
-//     input = new int[5]; // new array being created.. therefore points to a new object
-//     input[0] = 15;
-//     }
-
 //     public static void main(String args[]){
-//         int arr[] = new int[5];
-//         change(arr);
-//         System.out.println("output is "+arr[0]); // hence at last no change is made
+//         Scanner sc = new Scanner(System.in);
+//         int size = sc.nextInt();
+//         String names[]= new String[size];
+        
+//         for(int i=0; i<size; i++){
+//             names[i]= sc.next();
+//         }
+//         for(int i = 0; i<size; i++){
+//             System.out.println(names[i]);
+//         }
+//         sc.close();
 //     }
 // }
+
+public class Array {
+    
+    public static void change(int input[]){ 
+    input = new int[5]; 
+    input[0] = 15;
+    }
+
+    public static void main(String args[]){
+        int arr[] = new int[5];
+        change(arr);
+        System.out.println("output is "+arr[0]); 
+    }
+}
