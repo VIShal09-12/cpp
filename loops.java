@@ -1,17 +1,17 @@
 
 // For loop:
 
-// import java.util.*;
+import java.util.*;
 
-// public class loops {
-//     public static void main(String args[]){
-//         Scanner sc = new Scanner(System.in);
-//         for(int i=1; i<=33; i++){
-//             System.out.println("hello bhav");
-//         }
+public class loops {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        for(int i=1; i<=33; i++){
+            System.out.println("hello bhav");
+        }
 
-//     }
-// }
+    }
+}
 
 // While loop:  jab tak
 
@@ -58,16 +58,16 @@
 //     }
 // }
 
-import java.util.*;
+// import java.util.*;
 
-public class loops{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        System.out.println("---");
-        for (int i= 1; i<= 10; i ++){
-            System.out.println(n* i);
-        }
-        sc.close();
-    }
-}
+// public class loops{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         System.out.println("---");
+//         for (int i= 1; i<= 10; i ++){
+//             System.out.println(n* i);
+//         }
+//         sc.close();
+//     }
+// }
