@@ -4,14 +4,7 @@ import java.util.*;
 public class MergeSort{
 	public static void main(String args[]){
 		int arr[]= {5, 4, 2, 3, 1};
-		// arr= sort(arr);
-		// System.out.println(Arrays.toString(arr));
-
-		// if we do..
-		// int ans[] = sort(arr);
-		// System.out.println(Arrays.toString(arr));  
-		// we will get the same array without as our array is not being modified
-
+		
 		
 		System.out.println(Arrays.toString(arr));
 
@@ -23,8 +16,7 @@ public class MergeSort{
 		}
 		int mid= arr.length/2;
 
-		// Copy Of Range -> copies the specified range in the new array
-		// by using COPY OF RANGE method it's creating new objects everytime rather than just modifying the original array
+		
 		int left[]= sort(Arrays.copyOfRange(arr, 0, mid)); // every time making a copy of array(new array) for left half by Copy Of Range method
 		int right[]= sort(Arrays.copyOfRange(arr, mid, arr.length)); // same ways amking new array for right half by same method
 
@@ -50,10 +42,7 @@ public class MergeSort{
 			k++;
 		}
 
-		// It may be possible that one of the arrays is not completed.. 
-		// ex: first= {3, 5, 6, 9, 12, 54};
-		//    second= {1, 4, 7, 10}; 
-		// here our 'second' array will get completed but still our 'first' array would have some elements left.. therefore we would add all remaining elements as it is
+		
 		while(i< first.length){
 			mix[k]= first[i];
 			i++;
@@ -65,8 +54,7 @@ public class MergeSort{
 			j++;
 			k++; 
 		}
-		// only one of these loops would be true therefore only one of them would execute
-
+		
 		return mix;
 	}
 
