@@ -12,25 +12,7 @@ public class Patterns {
 
     
 
-    public static void pattern5(int n){
-        // int j=0;
-        for(int i=0; i<=(2*n-1); i++){
-            if(i>n){
-                for(int j=2*n-i; j>0;j--){
-                    System.out.print("*"+ " ");
-                }
-                // System.out.println();
-            }
-            else{
-                for(int j=0; j<i; j++){
-                    System.out.print("*"+ " ");
-                }
-                // System.out.println();
-            }
-            System.out.println();
-        }
-    }
-
+    
     public static void pattern6(int n){
         for(int i= 0; i<=(2*n-1); i++){
             if(i<=n){
