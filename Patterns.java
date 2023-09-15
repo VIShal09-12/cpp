@@ -9,32 +9,6 @@ public class Patterns {
         pattern10(n);
         sc.close();
     }
-
-    
-
-    
-    public static void pattern6(int n){
-        for(int i= 0; i<=(2*n-1); i++){
-            if(i<=n){
-                for(int spaces=n-i; spaces> 0; spaces--){
-                    System.out.print(" ");
-                }
-                for(int j=0; j< i; j++){
-                    System.out.print( "*"+" ");
-                }
-            }
-            else{
-                for(int spaces=0; spaces<i-n; spaces++){
-                    System.out.print(" ");
-                }
-                for(int j= 2*n-i; j>0; j--){
-                    System.out.print("*"+ " ");
-                }
-            }
-            System.out.println();
-        }
-    }
-
     public static void pattern7(int n){
         for(int i=1; i<= n; i++){
             int spaces = n-i;
