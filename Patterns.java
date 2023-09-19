@@ -9,9 +9,6 @@ public class Patterns {
         pattern10(n);
         sc.close();
     }
-  
-
-    
 
     public static void pattern10(int n){
         int originalN= n;
