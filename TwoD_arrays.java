@@ -1,28 +1,28 @@
 
-import java.util.*;
+// import java.util.*;
 
-public class TwoD_arrays{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int rows = sc.nextInt();
-        int cols = sc.nextInt();
+// public class TwoD_arrays{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int rows = sc.nextInt();
+//         int cols = sc.nextInt();
 
-        int arr[][] = new int[rows][cols];
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<cols; j++){
-                arr[i][j] = sc.nextInt();
-            }
-        }
+//         int arr[][] = new int[rows][cols];
+//         for(int i=0; i<rows; i++){
+//             for(int j=0; j<cols; j++){
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
 
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<cols; j++){
-                System.out.print(arr[i][j]+ " ");
-            }
-            System.out.println();
-        }
+//         for(int i=0; i<rows; i++){
+//             for(int j=0; j<cols; j++){
+//                 System.out.print(arr[i][j]+ " ");
+//             }
+//             System.out.println();
+//         }
         
-    }
-}
+//     }
+// }
 
 // import java.util.*;
 
@@ -59,43 +59,43 @@ public class TwoD_arrays{
 //     }
 // }
 
-// import java.util.*;
+import java.util.*;
 
-// public class TwoD_arrays{
-//     public static void main(String args[]){
-//         Scanner sc = new Scanner(System.in);
-//         int rows = sc.nextInt();
-//         int cols = sc.nextInt();
-//         int arr[][]= new int[rows][cols];
+public class TwoD_arrays{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int rows = sc.nextInt();
+        int cols = sc.nextInt();
+        int arr[][]= new int[rows][cols];
 
-//         for(int i=0; i<rows; i++){
-//             for(int j=0; j<cols; j++){
-//                 arr[i][j]= sc.nextInt();
-//             }
-//         }
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<cols; j++){
+                arr[i][j]= sc.nextInt();
+            }
+        }
 
-//         System.out.print("Enter the number you want to search: ");
-//         int target= sc.nextInt();
+        System.out.print("Enter the number you want to search: ");
+        int target= sc.nextInt();
 
-//         int ans[] = searchInMatrix(arr, target);
-//         System.out.println("The ans is "+ Arrays.toString(ans));
-//         sc.close();
+        int ans[] = searchInMatrix(arr, target);
+        System.out.println("The ans is "+ Arrays.toString(ans));
+        sc.close();
 
-//     }
+    }
 
-//     // this is how we do linear search in a 2d array and RETURN AN ARRAY FROM A METHOD
-//     static int[] searchInMatrix(int arr[][], int target){
-//         if(arr.length==0){
-//             return new int[]{0,0};
-//         }
+    // this is how we do linear search in a 2d array and RETURN AN ARRAY FROM A METHOD
+    static int[] searchInMatrix(int arr[][], int target){
+        if(arr.length==0){
+            return new int[]{0,0};
+        }
 
-//         for(int i=0; i<arr.length; i++){
-//             for(int j=0; j<arr[0].length; j++){
-//                 if(arr[i][j]== target){
-//                     return new int[]{i, j};
-//                 }
-//             }
-//         }
-//         return new int[]{-1,-1};
-//     }
-// }
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr[0].length; j++){
+                if(arr[i][j]== target){
+                    return new int[]{i, j};
+                }
+            }
+        }
+        return new int[]{-1,-1};
+    }
+}
